@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(90deg, #FC6076 0%, #FF9A44 100%);
+    font-family: Poppins;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-date {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    margin-top: 35px;
+}
+
+.top-5__list-item {
+    display: flex;
+    align-items: center;
+}
+
+.list-item__left {
+    display: flex;
+    align-items: center;
+}
+
+.top-5__profile-photo {
+    width: 91px;
+    object-fit: contain;
+}
