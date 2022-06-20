@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modme leaderboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -14,89 +20,187 @@
         <div class="header-logo">
           <a href=""><img src="../assets/photo/logo.png" alt="mars-logo" /></a>
         </div>
-        <div class="header-date header-day">Friday: 9:00 - 20:00</div>
+        <div class="header-date header-day"></div>
       </div>
     </header>
     <main class="main">
-      <div class="container main-container">
-        <div class="top-5">
-          <h2 class="top-5__haeding">ТОП 5 СТУДЕНТОВ</h2>
-          <ul class="top-5__list">
-            <li class="top-5__list-item top-1__student">
-              <div class="list-item__left">
-                <h5 class="top-5__rate">1</h5>
-                <img
-                  class="top-5__profile-photo"
-                  src="../assets/photo/profile-photo.png"
-                  alt="profile-photo"
-                />
-                <span class="top-5__user-name">Name</span>
-              </div>
-              <div class="list-item__right">
-                <strong class="top-5__coins">10,513 coins</strong>
-              </div>
-            </li>
-            <li class="top-5__list-item top-2__student">
-              <div class="list-item__left">
-                <h5 class="top-5__rate">2</h5>
-                <img
-                  class="top-5__profile-photo"
-                  src="../assets/photo/profile-photo.png"
-                  alt="profile-photo"
-                />
-                <span class="top-5__user-name">Name</span>
-              </div>
-              <div class="list-item__right">
-                <strong class="top-5__coins">10,513 coins</strong>
-              </div>
-            </li>
-            <li class="top-5__list-item top-3__student">
-              <div class="list-item__left">
-                <h5 class="top-5__rate">3</h5>
-                <img
-                  class="top-5__profile-photo"
-                  src="../assets/photo/profile-photo.png"
-                  alt="profile-photo"
-                />
-                <span class="top-5__user-name">Name</span>
-              </div>
-              <div class="list-item__right">
-                <strong class="top-5__coins">10,513 coins</strong>
-              </div>
-            </li>
-            <li class="top-5__list-item top-4__student">
-              <div class="list-item__left">
-                <h5 class="top-5__rate">4</h5>
-                <img
-                  class="top-5__profile-photo"
-                  src="../assets/photo/profile-photo.png"
-                  alt="profile-photo"
-                />
-                <span class="top-5__user-name">Name</span>
-              </div>
-              <div class="list-item__right">
-                <strong class="top-5__coins">10,513 coins</strong>
-              </div>
-            </li>
-            <li class="top-5__list-item top-5__student">
-              <div class="list-item__left">
-                <h5 class="top-5__rate">5</h5>
-                <img
-                  class="top-5__profile-photo"
-                  src="../assets/photo/profile-photo.png"
-                  alt="profile-photo"
-                />
-                <span class="top-5__user-name">Name</span>
-              </div>
-              <div class="list-item__right">
-                <strong class="top-5__coins">10,513 coins</strong>
-              </div>
-            </li>
-          </ul>
+      <section class="main-top">
+        <div class="container main-top-container">
+          <div class="top-5">
+            <h2 class="top__heading">ТОП 5 СТУДЕНТОВ</h2>
+            <ul class="top-5__list">
+              <li class="top-5__list-item top-5__student1">
+                <div class="list-item__left">
+                  <h5 class="top-5__rate">1</h5>
+                  <img
+                    class="top-5__profile-photo"
+                    src="../assets/photo/profile-photo.png"
+                    alt="profile-photo"
+                  />
+                  <span class="top-5__user-name">Vladislav</span>
+                </div>
+                <div class="list-item__right">
+                  <strong class="top-5__coins">10,513 coins</strong>
+                </div>
+              </li>
+              <li class="top-5__list-item top-5__student2">
+                <div class="list-item__left">
+                  <h5 class="top-5__rate">2</h5>
+                  <img
+                    class="top-5__profile-photo"
+                    src="../assets/photo/profile-photo.png"
+                    alt="profile-photo"
+                  />
+                  <span class="top-5__user-name">Rustam</span>
+                </div>
+                <div class="list-item__right">
+                  <strong class="top-5__coins">9,513 coins</strong>
+                </div>
+              </li>
+              <li class="top-5__list-item top-5__student3">
+                <div class="list-item__left">
+                  <h5 class="top-5__rate">3</h5>
+                  <img
+                    class="top-5__profile-photo"
+                    src="../assets/photo/profile-photo.png"
+                    alt="profile-photo"
+                  />
+                  <span class="top-5__user-name">Name</span>
+                </div>
+                <div class="list-item__right">
+                  <strong class="top-5__coins">8,513 coins</strong>
+                </div>
+              </li>
+              <li class="top-5__list-item top-5__student4">
+                <div class="list-item__left">
+                  <h5 class="top-5__rate">4</h5>
+                  <img
+                    class="top-5__profile-photo"
+                    src="../assets/photo/profile-photo.png"
+                    alt="profile-photo"
+                  />
+                  <span class="top-5__user-name">Name</span>
+                </div>
+                <div class="list-item__right">
+                  <strong class="top-5__coins">7,513 coins</strong>
+                </div>
+              </li>
+              <li class="top-5__list-item top-5__student5">
+                <div class="list-item__left">
+                  <h5 class="top-5__rate">5</h5>
+                  <img
+                    class="top-5__profile-photo"
+                    src="../assets/photo/profile-photo.png"
+                    alt="profile-photo"
+                  />
+                  <span class="top-5__user-name">Name</span>
+                </div>
+                <div class="list-item__right">
+                  <strong class="top-5__coins">6,513 coins</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="top-3">
+            <div class="top-3__second">
+              <img
+                class="top-3__profile-photo"
+                src="../assets/photo/profile-photo.png"
+                alt=""
+              />
+              <h2 class="top-3__user-name">Vladislav</h2>
+            </div>
+            <div class="top-3__first">
+              <img
+                class="top-3__profile-photo"
+                src="../assets/photo/profile-photo.png"
+                alt=""
+              />
+              <h2 class="top-3__user-name">Vladislav</h2>
+              <div class="top-3__first-rank">1</div>
+            </div>
+            <div class="top-3__third">
+              <img
+                class="top-3__profile-photo"
+                src="../assets/photo/profile-photo.png"
+                alt=""
+              />
+              <h2 class="top-3__user-name">Vladislav</h2>
+            </div>
+          </div>
+          <div class="top-graphic__wrapper">
+            <h2 class="top__heading">ТОП 3 КАТЕГОРИИ</h2>
+            <div class="top-graphic" style="height: 350px"></div>
+            <div class="top-graphic__cat">
+              <ul class="top-graphic__cat-list">
+                <li class="top-graphic__cat-list-item">
+                  <div class="top-graphic__cat-color cat-color1"></div>
+                  Gamer’s
+                </li>
+                <li class="top-graphic__cat-list-item">
+                  <div class="top-graphic__cat-color cat-color2"></div>
+                  Hacker’s
+                </li>
+                <li class="top-graphic__cat-list-item">
+                  <div class="top-graphic__cat-color cat-color3"></div>
+                  Coder’s
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="top-3"></div>
-        <div class="top-graphic"></div>
-      </div>
+      </section>
+      <section class="main-bottom">
+        <div class="container main-bottom-container">
+          <div class="categories-info">
+            <div class="categories-info-top">
+              <p class="categories-info__name">Gamer’s</p>
+              <div class="categories-info__img"></div>
+              <p class="categories-info__coins">17581 coins</p>
+            </div>
+            <div class="categories-info-bottom">
+              <img
+                class="categories-bottom__img"
+                src="../assets/photo/roblox.png"
+                alt=""
+              />
+              <img
+                class="categories-bottom__img"
+                src="../assets/photo/scratch.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="categories-info">
+            <div class="categories-info-top">
+              <p class="categories-info__name">Hacker’s</p>
+              <div class="categories-info__img"></div>
+              <p class="categories-info__coins">17581 coins</p>
+            </div>
+            <div class="categories-info-bottom">
+              <img
+                class="categories-bottom__img"
+                src="../assets/photo/python.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="categories-info">
+            <div class="categories-info-top">
+              <p class="categories-info__name">Coder’s</p>
+              <div class="categories-info__img"></div>
+              <p class="categories-info__coins">17581 coins</p>
+            </div>
+            <div class="categories-info-bottom">
+              <img
+                class="categories-bottom__img"
+                src="../assets/photo/front.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./script.js"></script>

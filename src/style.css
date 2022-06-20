@@ -1,18 +1,53 @@
 body {
     background: linear-gradient(90deg, #FC6076 0%, #FF9A44 100%);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
 .header-date {
+    position: relative;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     color: #fff;
+    margin-left: 40px;
+}
+
+.header-date::before {
+    content: '';
+    position: absolute;
+    background-image: url('../assets/icons/calendar.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    left: -40px;
+    top: 8px;
+}
+
+.header-day::before {
+    background-image: url('../assets/icons/clock-mars.svg');
 }
 
 .header-container {
@@ -22,20 +57,271 @@ body {
 }
 
 .main {
-    margin-top: 35px;
+    margin-top: 15px;
+}
+
+.main-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-5 {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+}
+
+.top__heading {
+    background-color: #FF9A44;
+    background-image: linear-gradient(90deg, #FC6076 0%, #FF9A44 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-5__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .top-5__list-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 5px 20px;
+    border-radius: 30px;
 }
 
 .list-item__left {
     display: flex;
+    width: 50%;
     align-items: center;
+    column-gap: 14px;
+}
+
+.top-5__rate {
+    font-weight: 700;
+    font-size: 28px;
+    text-shadow: 3px 3px 4px rgba(49, 34, 68, 0.7);
 }
 
 .top-5__profile-photo {
-    width: 91px;
+    width: 61px;
     object-fit: contain;
+}
+
+.top-5__user-name {
+    font-weight: 600;
+    color: #312244;
+    font-size: 20px;
+    max-width: 170px;
+    text-align: left;
+    text-shadow: 3px 3px 4px rgba(49, 34, 68, 0.7);
+}
+
+.top-5__coins {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgba(49, 34, 68, 0.7);
+    text-shadow: 3px 3px 4px rgba(49, 34, 68, 0.7);
+}
+
+.top-5__student1 {
+    background: #FFCA28;
+}
+
+.top-5__student2 {
+    background: #FF8228;
+}
+
+.top-5__student3 {
+    background: #E66060;
+}
+
+.top-5__student4 {
+    background: #ADCB6F;
+}
+
+.top-5__student5 {
+    background: #E3E3E3;
+}
+
+.top-3 {
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-3__profile-photo {
+    width: 200px;
+    border: 10px solid #FFCA28;
+    border-radius: 50%;
+}
+
+.top-3__second>.top-3__profile-photo,
+.top-3__third>.top-3__profile-photo {
+    width: 150px;
+    border-color: #fff;
+}
+
+.top-3__first {
+    position: relative;
+}
+
+.top-3__first-rank {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: #FFCA28;
+    border-radius: 50%;
+    border: 6px solid #282C2F;
+    font-weight: 400;
+    font-size: 28px;
+    top: 190px;
+    left: 80px;
+}
+
+.top-3__user-name {
+    margin-top: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.top-graphic__wrapper {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.top-graphic__cat-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-graphic__cat-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-graphic__cat-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFCA28;
+}
+
+.cat-color2 {
+    background: #FF8228;
+}
+
+.cat-color3 {
+    background: #E56060;
+}
+
+.main-bottom {
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.main-bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-info {
+    width: 600px;
+    text-align: center;
+    padding: 26px;
+    border-right: 4px solid transparent;
+    border-image: linear-gradient(90deg, #FC6076 0%, #FF9A44 100%);
+    border-image-slice: 1;
+}
+
+.categories-info:nth-last-child(1) {
+    border-right: none;
+}
+
+.categories-info-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.categories-info__name {
+    background-color: #FF9A44;
+    background-image: linear-gradient(90deg, #FC6076 0%, #FF9A44 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.categories-info__img {
+    position: relative;
+    background: linear-gradient(90deg, #FC6076 0%, #FF9A44 100%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.categories-info:nth-child(1) .categories-info__img::before {
+    position: absolute;
+    content: '';
+    background-image: url("../assets/icons/gamers-logo.svg");
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+
+.categories-info:nth-child(2) .categories-info__img::before {
+    position: absolute;
+    content: '';
+    background-image: url("../assets/icons/hackers-logo.svg");
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+
+.categories-info:nth-child(3) .categories-info__img::before {
+    position: absolute;
+    content: '';
+    background-image: url("../assets/icons/coders-logo.svg");
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+
+.categories-info__coins {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+.categories-info-bottom {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.categories-bottom__img {
+    width: 300px;
 }
