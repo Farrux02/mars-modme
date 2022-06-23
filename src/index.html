@@ -12,14 +12,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <meta http-equiv="refresh" content="0; https://farrux02.github.io/mars-modme/src/index.html" />
+    <!-- <meta http-equiv="refresh" content="0; https://farrux02.github.io/mars-modme/src/index.html" /> -->
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <div class="header-date"></div>
         <div class="header-logo">
-          <a href=""><img src="../assets/photo/logo.png" alt="mars-logo" /></a>
+          <a class="header-link" href="https://marsit.uz"
+            ><img
+              class="mars-logo"
+              src="../assets/photo/logo.png"
+              alt="mars-logo"
+          /></a>
         </div>
         <div class="header-date header-day"></div>
       </div>
@@ -110,6 +115,7 @@
                 alt=""
               />
               <h2 class="top-3__user-name">Vladislav</h2>
+              <div class="top-3__second-rank">2</div>
             </div>
             <div class="top-3__first">
               <img
@@ -127,11 +133,13 @@
                 alt=""
               />
               <h2 class="top-3__user-name">Vladislav</h2>
+              <div class="top-3__third-rank">3</div>
+              
             </div>
           </div>
           <div class="top-graphic__wrapper">
             <h2 class="top__heading">ТОП 3 КАТЕГОРИИ</h2>
-            <div class="top-graphic" style="height: 350px"></div>
+            <div class="top-graphic" style="height: 450px"></div>
             <div class="top-graphic__cat">
               <ul class="top-graphic__cat-list">
                 <li class="top-graphic__cat-list-item">
@@ -151,58 +159,32 @@
           </div>
         </div>
       </section>
-      <section class="main-bottom">
-        <div class="container main-bottom-container">
-          <div class="categories-info">
-            <div class="categories-info-top">
-              <p class="categories-info__name">Gamer’s</p>
-              <div class="categories-info__img"></div>
-              <p class="categories-info__coins">17581 coins</p>
-            </div>
-            <div class="categories-info-bottom">
-              <img
-                class="categories-bottom__img"
-                src="../assets/photo/roblox.png"
-                alt=""
-              />
-              <img
-                class="categories-bottom__img"
-                src="../assets/photo/scratch.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="categories-info">
-            <div class="categories-info-top">
-              <p class="categories-info__name">Hacker’s</p>
-              <div class="categories-info__img"></div>
-              <p class="categories-info__coins">17581 coins</p>
-            </div>
-            <div class="categories-info-bottom">
-              <img
-                class="categories-bottom__img"
-                src="../assets/photo/python.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="categories-info">
-            <div class="categories-info-top">
-              <p class="categories-info__name">Coder’s</p>
-              <div class="categories-info__img"></div>
-              <p class="categories-info__coins">17581 coins</p>
-            </div>
-            <div class="categories-info-bottom">
-              <img
-                class="categories-bottom__img"
-                src="../assets/photo/front.png"
-                alt=""
-              />
-            </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="categories-info">
+          <div class="categories-info-top">
+            <p class="categories-info__name">Gamer’s</p>
+            <div class="categories-info__img"></div>
+            <p class="categories-info__coins">17581 coins</p>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="categories-info">
+          <div class="categories-info-top">
+            <p class="categories-info__name">Hacker’s</p>
+            <div class="categories-info__img"></div>
+            <p class="categories-info__coins">17581 coins</p>
+          </div>
+        </div>
+        <div class="categories-info">
+          <div class="categories-info-top">
+            <p class="categories-info__name">Coder’s</p>
+            <div class="categories-info__img"></div>
+            <p class="categories-info__coins">17581 coins</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
   </body>
