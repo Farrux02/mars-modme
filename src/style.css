@@ -38,12 +38,12 @@ a {
     font-size: 32px;
     color: #fff;
     margin-left: 40px;
-    top: 200px;
-    left: -60px;
+    top: 190px;
+    left: -40px;
 }
 
 .header-day {
-    left: 0;
+    left: 10px;
 }
 
 .header-link {
