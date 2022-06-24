@@ -38,7 +38,7 @@ a {
     font-size: 32px;
     color: #fff;
     margin-left: 40px;
-    top: 160px;
+    top: 200px;
     left: -60px;
 }
 
@@ -52,8 +52,8 @@ a {
 
 .mars-logo {
     position: absolute;
-    top: 220px;
-    left: -100px;
+    top: 260px;
+    left: -120px;
 }
 
 .header-date::before {
@@ -107,7 +107,6 @@ a {
 .top-5__list {
     display: flex;
     flex-direction: column;
-    row-gap: 34px;
 }
 
 .top-5__list-item {
@@ -116,13 +115,17 @@ a {
     align-items: center;
     padding: 5px 20px;
     border-radius: 5px;
+    margin-bottom: 40px;
 }
 
 .list-item__left {
     display: flex;
     width: 50%;
     align-items: center;
-    column-gap: 14px;
+}
+
+.list-item__left * {
+    margin-right: 14px;
 }
 
 .top-5__rate {
@@ -313,7 +316,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
+}
+
+.categories-info-top * {
+    margin-right: 14px;
 }
 
 .categories-info__name {
