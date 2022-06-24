@@ -193,6 +193,12 @@ a {
     border-radius: 50%;
 }
 
+.top-3__coins {
+    text-align: center; 
+    font-size: 24px;
+    color: #272727;
+}
+
 .top-3__second>.top-3__profile-photo,
 .top-3__third>.top-3__profile-photo {
     width: 150px;
