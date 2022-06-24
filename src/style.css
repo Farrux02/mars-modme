@@ -39,11 +39,11 @@ a {
     color: #fff;
     margin-left: 40px;
     top: 190px;
-    left: -40px;
+    left: 150px;
 }
 
 .header-day {
-    left: 10px;
+    left: -100px;
 }
 
 .header-link {
