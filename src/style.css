@@ -31,6 +31,10 @@ a {
     margin: 0 auto;
 }
 
+.header {
+    position: relative;
+}
+
 .header-date {
     position: relative;
     font-style: normal;
@@ -55,6 +59,18 @@ a {
     position: absolute;
     top: 300px;
     left: -120px;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 200px;
+    height: 70px;
+    font-size: 40px;
+    outline: none;
 }
 
 .header-date::before {
